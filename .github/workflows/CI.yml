@@ -8,9 +8,9 @@ jobs:
   run-tests:
     if: github.repository == 'code-akh/exercise-reference-a-codeql-query'
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: .github/actions/local-action
+    # defaults:
+    #   run:
+    #     working-directory: .github/actions/local-action
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
